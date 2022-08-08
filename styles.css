@@ -303,6 +303,8 @@ body {
     line-height: 4.8rem;
     letter-spacing: -0.454545px;
     margin-bottom: 2rem;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
   .section-hero__description {
     font-size: 1.6rem;
