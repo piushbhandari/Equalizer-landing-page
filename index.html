@@ -9,12 +9,25 @@
     <title>>__></title>
   </head>
   <body>
+    <div class="pattern1"> 
+    <img class="fit-image" src="./assets/bg-pattern-1.svg" alt="bg-pattern">
+</div>
+<div class="pattern2">
+    <img class="fit-image" src="./assets/bg-main-desktop.png" alt="">
+</div>
     <nav class="nav">
+        <div class="nav__cont">
+
+       
       <img src="./assets/logo.svg" alt="equalizer" />
+    </div>
     </nav>
 
     <main class="main">
       <section class="section-hero">
+        <div class="section-hero__cont">
+
+       
         <h1 class="section-hero__title">
           We make your music sound extraordinary.
         </h1>
@@ -24,40 +37,49 @@
           parametric EQ & volume mixer. Control bass, mids, treble, gain
           control, reverb, and more!
         </p>
+    </div>
       </section>
       <section class="section-facts">
-        <div class="section-facts__imgbox section-facts__imgbox--1"></div>
+        <div class="section-facts__cont">
+            <div class="section-facts__pattern">
+                <img class="fit-image" src="./assets/bg-pattern-2.svg" alt="">
+            </div>
+        <div class="section-facts__imgbox section-facts__imgbox--1">
+            <img class="fit-image" src="./assets/illustration-app.png" alt="phone illustration-app">
+        </div>
         <div class="section-facts__textbox">
             <h2 class="section-facts__title">Premium EQ</h2>
             <p class="section-facts__desc">Get expert-level control with a robust equalizer, volume mixer,
                 and spatial audio. Take your listening experience to a whole new level and
                 access all our incredible features!</p>
-                <p class="section-facts__price">
+                <p class="section-facts__price align-center">
                     $4 <span>/ month</span>
                 </p>
-                <ul class="section-facts__download-links">
-                    <li><button class="section-facts__link section-facts__link--ios">
+                <ul class="section-facts__download-links flex-column">
+                    <li><button class="section-facts__link section-facts__link--ios  flex-center">
                         <img src="./assets/icon-apple.svg" alt="icon-apple">
                         <p>iOS Download</p>
                     </button></li>
-                    <li><button class="section-facts__link section-facts__link--android">
+                    <li><button class="section-facts__link section-facts__link--android flex-center ">
                         <img src="./assets/icon-android.svg" alt="icon-android">
                         <p>Android Download</p>
                     </button></li>
                 </ul>
         </div>
+    </div>
       </section>
     </main>
 
     <div class="footer">
-        <div class="footer__cont">
+        <div class="footer__cont align-start">
             <img src="./assets/logo.svg" alt="equalizer">
-        </div>
+       
         <p class="footer__description">All rights reserved © Equalizer 2021
+             <br>
             Have any problems? Contact us via
             social media or email us at <span>equalizer@example.com</span>
         </p>
-        <ul class="footer__social-icons">
+        <ul class="footer__social-icons flex-center">
             <li>
 
            
@@ -66,8 +88,7 @@
             </a>
         </li>
         <li>
-
-        </li> 
+ 
             <a href="#" class="footer__social-icon">
                 <img src="./assets/icon-instagram.svg" alt="icon-instagram">
             </a>
@@ -78,6 +99,7 @@
             </a>
         </li>
         </ul>
+    </div>
     </footer>
 
  
