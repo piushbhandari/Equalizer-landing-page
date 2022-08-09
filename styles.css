@@ -113,7 +113,6 @@ body {
 .section-facts {
   padding: 0 3.9rem;
   color: #fcfaf9;
-  display: none;
   animation: slideInRight 1s;
 }
 .section-facts__cont {
@@ -147,7 +146,6 @@ body {
   padding: 5.8rem 5.9rem 4.8rem 5.4rem;
   position: relative;
   z-index: 1;
-  /* temp?!?!?!?!?! */
   margin-bottom: -9rem;
   max-width: 44.6rem;
 }
@@ -264,6 +262,26 @@ body {
     line-height: 2.8rem;
     max-width: 51.4rem;
   }
+  .section-facts__cont {
+    background-color: #191826;
+    border-radius: 12px;
+    max-width: 111rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 12.7rem;
+    padding: 9rem 5.8rem 0 6.4rem;
+    position: relative;
+  }
+  .section-facts__imgbox {
+    position: absolute;
+    top: 0;
+    left: 6.4rem;
+    z-index: 1;
+  }
+  .section-facts__textbox {
+    margin-left: auto;
+  }
 }
 /* try @uto fit grid */
 @media all and (max-width: 935px) {
@@ -278,9 +296,30 @@ body {
     grid-column: 1 / -1;
   }
 }
+@media all and (max-width: 860px) {
+  .section-facts__cont {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+    gap: 4.8rem;
+  }
+  .section-facts__cont > * {
+    margin: 0;
+  }
+  .section-facts__imgbox {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
 @media all and (max-width: 581px) {
   .pattern1 {
     display: none;
+  }
+  .section-facts__pattern {
+    top: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 @media all and (max-width: 578px) {
@@ -293,12 +332,51 @@ body {
     justify-content: flex-start;
   }
 }
-@media all and (max-width: 499px) {
-  .section-hero__cont {
-    border: 1px solid skyblue;
+@media all and (max-width: 552px) {
+  body {
+    padding-top: 3.999rem;
+    padding-bottom: 8rem;
   }
+  .nav {
+    margin-bottom: 6.401rem;
+    padding: 0 2.415rem;
+  }
+  .main {
+    margin-bottom: 6.4rem;
+  }
+  .section-hero {
+    margin-bottom: 16.6rem;
+    padding: 0 2.415rem;
+  }
+  .section-facts {
+    padding: 0;
+  }
+  .section-facts__cont {
+    padding: 0;
+  }
+  .section-facts__imgbox {
+    margin-top: -10.2rem;
+  }
+  .section-facts__textbox {
+    padding: 4.8rem 3.6rem;
+    max-width: 100%;
+  }
+  .section-facts__title {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 1.2rem;
+  }
+  .section-facts__desc {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 3.6rem;
+  }
+  .section-facts__price {
+    margin-bottom: 3.2rem;
+  }
+}
+@media all and (max-width: 499px) {
   .section-hero__title {
-    font-weight: 700;
     font-size: 4rem;
     line-height: 4.8rem;
     letter-spacing: -0.454545px;
